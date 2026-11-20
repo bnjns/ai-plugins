@@ -1,0 +1,16 @@
+---
+description: Mandatory gate before creating or updating GitHub pull requests
+alwaysApply: true
+---
+
+# Create Pull Request — read the skill first
+
+**Do NOT read or follow this skill for read-only PR work** — viewing PRs (`gh pr view`), listing PRs, checking CI/status, reading comments, or investigating failures. Use normal `gh pr` commands for those.
+
+When the user asks to **create or update** a pull request (including "make a PR", "push and PR", "create/open/raise/draft a pull request", "edit the PR", "mark ready", or the diff-tab commit-and-PR action):
+
+1. **STOP.** Do not run `gh pr create`, `gh pr edit`, or `gh pr ready` yet.
+2. **READ** the `create-pull-request` skill (`skills/create-pull-request/SKILL.md` in the Create Pull Request plugin) if you have not already read it in this conversation.
+3. **Follow the skill exactly** — pre-flight checks, pre-push review offer (AskQuestion unless the prompt already decides), base branch, title format, PR template body, ready-for-review vs draft (AskQuestion when not specified in the prompt; ready for review is the default option).
+
+Skipping step 2 is a failure. Improvising a PR create/update workflow is not acceptable.

@@ -1,0 +1,20 @@
+{
+  "name": "coding-conventions",
+  "displayName": "Coding Conventions",
+  "version": "1.0.0",
+  "description": "General and language-specific coding conventions, enforced before edits via rules (Cursor) and hooks (Claude).",
+  "author": {
+    "name": "Ben Jones",
+    "email": "ben@bnjns.uk"
+  },
+  "license": "MIT",
+  "keywords": [
+    "conventions",
+    "coding-standards",
+    "typescript",
+    "jest"
+  ],
+  "rules": "rules",
+  "skills": "skills",
+  "hooks": "hooks"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "create-pull-request",
+  "displayName": "Create Pull Request",
+  "version": "1.0.0",
+  "description": "Create or update GitHub pull requests that follow the repo's PR template, with a Conventional Commits title and an optional pre-push code review. Enforced via rules (Cursor) and hooks (Claude).",
+  "author": {
+    "name": "Ben Jones",
+    "email": "ben@bnjns.uk"
+  },
+  "license": "MIT",
+  "keywords": [
+    "github",
+    "pull-request"
+  ],
+  "rules": "rules",
+  "skills": "skills",
+  "hooks": "hooks"
+}

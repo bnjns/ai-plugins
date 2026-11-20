@@ -1,0 +1,52 @@
+name: Validate marketplace
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "plugins/**"
+      - ".cursor-plugin/**"
+      - ".claude-plugin/**"
+      - "scripts/**"
+      - "AGENTS.md"
+      - "CLAUDE.md"
+      - ".github/workflows/**"
+  push:
+    branches:
+      - main
+    paths:
+      - "plugins/**"
+      - ".cursor-plugin/**"
+      - ".claude-plugin/**"
+      - "scripts/**"
+      - "AGENTS.md"
+      - "CLAUDE.md"
+      - ".github/workflows/**"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: "20"
+
+      - name: Verify Claude manifests are in sync
+        run: node scripts/sync-claude-manifests.mjs --check
+
+      - name: Verify Claude MCP symlinks
+        run: node scripts/link-claude-adapters.mjs --check
+
+      - name: Run marketplace validator
+        run: node scripts/validate.mjs
+
+      - name: Run hook guard tests
+        run: |
+          bash plugins/coding-conventions/hooks/test-hooks.sh
+          bash plugins/create-pull-request/hooks/test-hooks.sh
+          bash plugins/dual-platform-agents/hooks/test-hooks.sh

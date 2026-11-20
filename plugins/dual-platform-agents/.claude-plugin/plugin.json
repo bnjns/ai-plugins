@@ -1,0 +1,17 @@
+{
+  "name": "dual-platform-agents",
+  "displayName": "Dual-Platform Agents",
+  "version": "1.0.0",
+  "description": "Wire repo-level agent instructions, skills and agent definitions for both Cursor and Claude Code (AGENTS.md, CLAUDE.md, .agents/, .claude/), enforced via rules (Cursor) and hooks (Claude).",
+  "author": {
+    "name": "Ben Jones",
+    "email": "ben@bnjns.uk"
+  },
+  "license": "MIT",
+  "keywords": [
+    "agents",
+    "cursor",
+    "claude-code"
+  ],
+  "hooks": "./hooks/hooks.json"
+}

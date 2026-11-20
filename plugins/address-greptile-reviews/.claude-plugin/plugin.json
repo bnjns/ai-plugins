@@ -1,0 +1,16 @@
+{
+  "name": "address-greptile-reviews",
+  "displayName": "Address Greptile Reviews",
+  "version": "1.0.0",
+  "description": "Triage, verify and resolve Greptile PR review feedback — scores, inline comments, thrashing and evidence-backed pushback.",
+  "author": {
+    "name": "Ben Jones",
+    "email": "ben@bnjns.uk"
+  },
+  "license": "MIT",
+  "keywords": [
+    "greptile",
+    "code-review",
+    "pull-request"
+  ]
+}

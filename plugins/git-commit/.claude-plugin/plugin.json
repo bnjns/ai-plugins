@@ -1,0 +1,16 @@
+{
+  "name": "git-commit",
+  "displayName": "Git Commit",
+  "version": "1.0.0",
+  "description": "Conventional commit messages generated from the diff, with intelligent staging.",
+  "author": {
+    "name": "Ben Jones",
+    "email": "ben@bnjns.uk"
+  },
+  "license": "MIT",
+  "keywords": [
+    "git",
+    "commit",
+    "conventional-commits"
+  ]
+}

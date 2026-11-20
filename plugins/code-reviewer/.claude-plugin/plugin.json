@@ -1,0 +1,14 @@
+{
+  "name": "code-reviewer",
+  "displayName": "Code Reviewer",
+  "version": "1.0.0",
+  "description": "Read-only structured code review against conventions skills and the repo's AGENTS.md/CLAUDE.md and .greptile/ rules, split into blocking issues and suggestions.",
+  "author": {
+    "name": "Ben Jones",
+    "email": "ben@bnjns.uk"
+  },
+  "license": "MIT",
+  "keywords": [
+    "code-review"
+  ]
+}

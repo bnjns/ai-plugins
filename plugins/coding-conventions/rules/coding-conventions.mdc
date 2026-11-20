@@ -1,0 +1,13 @@
+---
+description: Mandatory coding conventions for all code changes
+alwaysApply: true
+---
+
+# Coding conventions — read the skill first
+
+When writing, refactoring, or reviewing code:
+
+1. **READ** the `coding-conventions` skill (`skills/coding-conventions/SKILL.md` in the Coding Conventions plugin) if you have not already read it in this conversation.
+2. **Follow it exactly** — the repo's lint and format config (read before writing, check changed files after), minimal comments (single-line unless the extra lines are worth reading), focused diffs, no over-engineering.
+
+Skipping step 1 is a failure. Do not improvise comment style or change scope beyond the task.

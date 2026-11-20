@@ -1,0 +1,21 @@
+---
+description: Mandatory gate before editing AGENTS.md, CLAUDE.md, or .agents/.claude/ files
+paths:
+  - "**/AGENTS.md"
+  - "**/CLAUDE.md"
+  - "**/.agents/**"
+  - "**/.claude/skills/**"
+  - "**/.claude/agents/**"
+  - "**/.claude/commands/**"
+  - "**/.claude/hooks/**"
+  - "**/.claude/rules/**"
+---
+
+# Dual-platform agents — read the skill first
+
+When creating or editing repo-level agent instructions, skills, or agent definitions:
+
+1. **READ** the `dual-platform-agents` skill (`skills/dual-platform-agents/SKILL.md` in the Dual-Platform Agents plugin) if you have not already read it in this conversation.
+2. **Follow it exactly** — canonical content under `AGENTS.md` / `.agents/`; Claude paths are symlinks only.
+
+Skipping step 1 is a failure. Do not create Claude-only copies or omit Cursor paths.

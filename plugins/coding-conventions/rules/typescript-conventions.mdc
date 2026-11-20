@@ -1,0 +1,15 @@
+---
+description: TypeScript conventions gate before TS edits
+paths:
+  - "**/*.{ts,tsx}"
+---
+
+# TypeScript conventions — read the skill first
+
+When writing, refactoring, or reviewing TypeScript (including Jest specs):
+
+1. **READ** the `typescript-conventions` skill (`skills/typescript-conventions/SKILL.md` in the Coding Conventions plugin) if you have not already read it in this conversation.
+2. Ensure the `coding-conventions` skill has also been read this conversation.
+3. **Follow both skills exactly** — type safety, imports, module design, Jest mocks.
+
+Framework idioms stay in their framework skills. Skipping step 1 is a failure.

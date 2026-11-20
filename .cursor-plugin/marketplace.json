@@ -1,0 +1,63 @@
+{
+  "name": "bnjns-cursor-plugins",
+  "displayName": "bnjns Cursor Plugins",
+  "owner": {
+    "name": "Ben Jones",
+    "email": "ben@bnjns.uk"
+  },
+  "metadata": {
+    "description": "Personal AI plugins by bnjns.",
+    "version": "1.0.0",
+    "pluginRoot": "plugins"
+  },
+  "plugins": [
+    {
+      "name": "coding-conventions",
+      "source": "coding-conventions",
+      "description": "General and language-specific coding conventions, enforced before edits via rules (Cursor) and hooks (Claude).",
+      "version": "1.0.0",
+      "rules": "rules",
+      "skills": "skills",
+      "hooks": "hooks"
+    },
+    {
+      "name": "dual-platform-agents",
+      "source": "dual-platform-agents",
+      "description": "Wire repo-level agent instructions, skills and agent definitions for both Cursor and Claude Code (AGENTS.md, CLAUDE.md, .agents/, .claude/), enforced via rules (Cursor) and hooks (Claude).",
+      "version": "1.0.0",
+      "rules": "rules",
+      "skills": "skills",
+      "hooks": "hooks"
+    },
+    {
+      "name": "git-commit",
+      "source": "git-commit",
+      "description": "Conventional commit messages generated from the diff, with intelligent staging.",
+      "version": "1.0.0",
+      "skills": "skills"
+    },
+    {
+      "name": "create-pull-request",
+      "source": "create-pull-request",
+      "description": "Create or update GitHub pull requests that follow the repo's PR template, with a Conventional Commits title and an optional pre-push code review. Enforced via rules (Cursor) and hooks (Claude).",
+      "version": "1.0.0",
+      "rules": "rules",
+      "skills": "skills",
+      "hooks": "hooks"
+    },
+    {
+      "name": "code-reviewer",
+      "source": "code-reviewer",
+      "description": "Read-only structured code review against conventions skills and the repo's AGENTS.md/CLAUDE.md and .greptile/ rules, split into blocking issues and suggestions.",
+      "version": "1.0.0",
+      "skills": "skills"
+    },
+    {
+      "name": "address-greptile-reviews",
+      "source": "address-greptile-reviews",
+      "description": "Triage, verify and resolve Greptile PR review feedback — scores, inline comments, thrashing and evidence-backed pushback.",
+      "version": "1.0.0",
+      "skills": "skills"
+    }
+  ]
+}
